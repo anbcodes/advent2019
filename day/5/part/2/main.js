@@ -1,4 +1,4 @@
-const Computer = require('./IntcodeComputer')
+const Computer = require('./src/IntcodeComputer')
 
 const fs = require('fs')
 

@@ -45,7 +45,7 @@ module.exports = class Program {
     let firstArgIndex = index + 1
     let args = opcodes.slice(firstArgIndex, firstArgIndex + numberOfArgs)
 
-    args = args.map((a, i) => ({ mode: parameterModes[i] || 0, value: +a }))
+    args = args.map((a, i) => ({ mode: parameterModes[i] || 0, value: parameterModes[i] ? +a : opcodes[+a], ref: +a }))
     
     return args;
   }
