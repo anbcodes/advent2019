@@ -1,0 +1,1 @@
+g=n=>Math.floor(+n/3)-2;console.log(String(require('fs').readFileSync('d')).split('\n').reduce((r,c)=>eval('for(;g(c)>0;c=g(c))r+=g(c)'),0))
